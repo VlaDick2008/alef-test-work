@@ -12,6 +12,8 @@ import { RouterLink, RouterView } from "vue-router";
   </header>
 
   <RouterView />
+
+  <footer class="bg-[#FAFAFA] absolute bottom-0 text-center w-full p-7">all rights reserved</footer>
 </template>
 
 <style></style>
