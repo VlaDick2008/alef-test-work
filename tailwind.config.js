@@ -8,6 +8,11 @@ export default {
 				"16-paragraph-2-medium": "16px",
 				"13-paragraph-3": "13px",
 			},
+			colors: {
+				primary: "#111111",
+				secondary: "rgba(17, 17, 17, 0.5)",
+				accent: "#01A7FD",
+			},
 			textColor: {
 				primary: "#111111",
 				secondary: "rgba(17, 17, 17, 0.5)",
