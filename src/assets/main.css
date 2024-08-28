@@ -5,3 +5,20 @@
 *, ::before, ::after {
   font-family: "Montserrat", sans-serif;
 }
+
+/* .form_input_lable {
+  color: #999;
+  transform: translate(0.25rem, -1.5rem);
+  transition: all 0.2s ease-out;
+}
+
+.form_input:focus + .form_input_lable {
+  color: #111;
+  transform: translate(0, -2.75rem);
+}
+
+.form_input:focus + .form_input_lable,
+.form_input:not(:placeholder-shown) + .form_input_lable {
+  color: #111;
+  transform: translate(0, -2.75rem);
+} */  
