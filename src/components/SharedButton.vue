@@ -11,7 +11,7 @@
 <script setup lang="ts">
 import { cn } from '@/lib/utils';
 
-const props = withDefaults(defineProps<{
+const { type, variant } = withDefaults(defineProps<{
   type: "button" | "submit",
   variant: 'primary' | 'outline' | 'ghost',
 }>(), { type: 'button' })
