@@ -13,7 +13,7 @@ import { RouterLink, RouterView } from "vue-router";
 
   <RouterView />
 
-  <footer class="bg-[#FAFAFA] absolute bottom-0 text-center w-full p-7">all rights reserved</footer>
+  <footer class="bg-[#FAFAFA] absolute top-[calc(100vh-80px)] text-center w-full p-7">all rights reserved</footer>
 </template>
 
 <style></style>
