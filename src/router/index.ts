@@ -1,3 +1,5 @@
+import FormView from "@/views/FormView.vue";
+import PreviewView from "@/views/PreviewView.vue";
 import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
@@ -10,15 +12,12 @@ const router = createRouter({
 		{
 			path: "/form",
 			name: "form",
-			component: () => import("../views/FormView.vue"),
+			component: FormView,
 		},
 		{
 			path: "/preview",
 			name: "preview",
-			// route level code-splitting
-			// this generates a separate chunk (About.[hash].js) for this route
-			// which is lazy-loaded when the route is visited.
-			component: () => import("../views/PreviewView.vue"),
+			component: PreviewView,
 		},
 	],
 });
