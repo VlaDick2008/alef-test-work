@@ -3,7 +3,7 @@ import ChildInfoBlock from '@/components/ChildInfoBlock.vue';
 import type { Data } from './FormView.vue';
 import { onMounted, ref } from 'vue';
 
-const data = ref<Data | null>()
+const data = ref()
 
 function getJsonFromLocalStorage(key: string) {
   const storedData = localStorage.getItem(key);
