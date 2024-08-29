@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import ChildInfoBlock from '@/components/ChildInfoBlock.vue';
 import type { Data } from './FormView.vue';
+import { ref } from 'vue';
 
-const data: Data = JSON.parse(localStorage.getItem('data') ?? '') || {};
+const data = ref<Data>(JSON.parse(localStorage.getItem('data') ?? '{}'))
 </script>
 
 <template>
-  <main class="max-w-2xl mx-auto">
+  <main v-if="data.value" class="max-w-2xl mx-auto">
     <div v-if="data.parentName !== ''">
       <div class="mb-10">
         <h1 class="text-xl text-primary font-medium my-7">Персональные данные</h1>
@@ -29,8 +30,9 @@ const data: Data = JSON.parse(localStorage.getItem('data') ?? '') || {};
       </div>
     </div>
 
-    <div v-else>
-      <p class="text-3xl text-center text-primary font-medium my-7">Вы ещё не заполнили свои данные 😞</p>
-    </div>
+
+  </main>
+  <main v-else>
+    <p class="text-3xl text-center text-primary font-medium my-7">Вы ещё не заполнили свои данные 😞</p>
   </main>
 </template>
