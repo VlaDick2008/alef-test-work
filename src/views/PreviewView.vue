@@ -16,11 +16,15 @@ const data: Data = JSON.parse(localStorage.getItem('data') ?? '');
       </div>
 
       <div>
-        <div class="flex gap-5 items-start flex-col">
+        <div v-if="data.amountOfKids.length > 0" class="flex gap-5 items-start flex-col">
           <h1 class="text-xl text-primary font-medium mt-7">Дети</h1>
           <div v-for="childrenBlock in data.amountOfKids" :key="childrenBlock.id">
             <ChildInfoBlock :name="childrenBlock.name" :age="childrenBlock.age" />
           </div>
+        </div>
+        <div v-else>
+          <h1 class="text-xl text-primary font-medium my-7">Дети</h1>
+          <p class="text-xl font-bold">Детей нет</p>
         </div>
       </div>
     </div>
