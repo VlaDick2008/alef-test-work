@@ -2,7 +2,7 @@
 import ChildInfoBlock from '@/components/ChildInfoBlock.vue';
 import type { Data } from './FormView.vue';
 
-const data: Data = JSON.parse(localStorage.getItem('data') ?? '');
+const data: Data = JSON.parse(localStorage.getItem('data') ?? '') || {};
 </script>
 
 <template>
