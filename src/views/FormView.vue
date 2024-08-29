@@ -3,7 +3,7 @@ import FormInput from '@/components/FormInput.vue';
 import SharedButton from '@/components/SharedButton.vue';
 import { ref } from 'vue';
 
-interface Data {
+export interface Data {
   parentName: string,
   parentAge: number,
   amountOfKids: {
